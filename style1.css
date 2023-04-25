@@ -1,0 +1,1131 @@
+/*Estilos CSS*/
+
+/*Estilos generales para todo*/
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Garamond";
+}
+
+/*Estilos para poner color de fondo al body*/
+body{
+    background-color:rgb(255, 255, 255);
+}
+
+/*Estilos para editar todos los parrafos de la páginas a menos que se editen posteriormente*/
+p{
+    font-size: 1.1em;
+    line-height: 25px;
+}
+
+/*========================================================================================*/
+/*=========================================HEADER=========================================*/
+/*========================================================================================*/
+
+/*Estilos para el header en su totalidad*/
+header{ 
+    background-image: url(fotos/header.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    font-family: "Garamond";
+    position: sticky;
+    top: 0;
+    border-bottom:1px solid black;
+    z-index: 100;
+}	
+
+/*Estilo para la el logo de la página*/
+/*Estilo para la el logo de la página*/
+header img{
+    padding: 5px 5px 5px 30px;
+}
+
+/*Estilo para el menu*/
+.headermenu{
+    display: flex;
+    margin-left: 10px;
+}
+
+/*Estilos para el h1*/
+header h1 {
+    font-size: 2vw; 
+    margin-left: 50px;
+    margin-right: 50px;
+    white-space: nowrap;
+}
+
+/*Estilo para cambiar el tamaño de la letra del h1 dependiendo de la resolución de la pantalla*/
+
+#lista1{
+    font-size:4px;
+}
+
+#menu{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+/*Estilos para editar el menu y sub menus del header*/
+#menu ul li {
+    background-color:#c2d583;
+    position: relative;
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400px;
+    font-size:15px;
+    padding:10px;
+    font-family:"Garamond";
+    letter-spacing:1px;
+    border-radius:2em;
+    float:left;
+    margin:1px;
+    padding:0;
+    list-style: none; 
+}
+
+/*Estilo para editar los enlaces del menu*/
+#menu ul a { 
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family:"Garamond";
+    text-transform:uppercase;
+    letter-spacing:1px;
+    border-radius:2em;
+}
+
+/*Estilos para editar el menú cuando el ratón se encuentra sobre este*/
+#menu ul li:hover {
+    background:#b8c58f;
+    border-radius:2em;
+}
+
+/*Estilos para editar el submenu*/
+#menu ul ul {
+    display:none;
+    position: absolute;
+    top:100%;
+    left:0;
+    padding:0;
+    border-radius:2em;
+}
+
+/*Estilos para el la lista del submenu*/
+#menu ul ul li {
+    float:none;
+    width:auto;
+    margin: 3px;
+}
+
+/*Estilos para los enlaces del submenu*/
+#menu ul ul a {
+    font-size: 12px;
+    padding: 15px;
+}
+
+/*Desplegar el submenu cuando se coloque el ratón sobre el menu*/
+#menu ul li:hover > ul {
+    display:block;
+}
+
+.checkbtn{
+    line-height: 80px;
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+}
+.checkbtn svg{
+    width:20px;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 20px;
+    transition: .5s ease;
+}
+.checkbtn svg:hover{
+    transform: rotate(10deg) scale(1.25);
+    transition: .5s;
+}
+#check{
+    display: none;
+}
+.rightarrow{
+    width: 17px;
+    height: 17px;
+    transform: rotate(90deg);
+}
+
+
+/*========================================================================================*/
+/*========================LA CUEVA DE LAS SETAS en index.html=============================*/
+/*========================================================================================*/
+
+/*Estilo para editar el contenedor de la información*/
+/*Dividimos este div en dos partes*/
+#CuevaSetas{
+    display:flex;
+    align-items: flex-start;
+    background-color:#e9edc9;
+    border-radius:2em;
+    padding: 20px;
+    padding-top: 20px;
+    width: 75%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    border: solid black 1px;
+}
+
+/*Estilo para colocar la segunda parte del contenedor a la derecha*/
+#parte2{
+    float: right;
+    text-align: center;
+    margin-left: 30px;
+    margin-right:30px;
+}
+
+/*Estilo para el div sobre Tabourot en el index.html*/
+.tabo{
+    font-size: 23px;
+}
+
+/*Estilo para la imagen de Tabourot*/
+.tabourot{
+    border-radius: 2em;
+}
+
+/*Estilo para editar el botón de enlace a la biografía de Tabourot*/
+.biografia{
+    background-image: url(fotos/header.jpg);
+    background-size: cover;
+    position: relative;
+    display:flex;
+    color:#ffff;
+    justify-content: center;
+    float:center;
+    text-decoration:none;
+    font-weight:300px;
+    font-family:"Garamond";
+    font-weight: bold;
+    padding:0px;
+    padding-left: 5px;
+    margin:auto;
+    letter-spacing:1px;
+    border-radius:2em;
+    border: 0.5px black solid;
+    list-style: none; 
+}
+
+/*Estilos para el enlace a la biografía de Tabourot*/
+.biografia a {
+    display:flex;
+    color:#fff;
+    text-decoration:none;
+    font-weight:0px;
+    font-size:12px;
+    padding:8px;
+    font-family:"Garamond";
+    letter-spacing:1px;
+    border-radius:2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*Estilos para que al botón de enlace a la vida de Tabourot cambien al colocar el ratón sobre él*/
+.biografia:hover {
+    background-image: url(fotos/header.jpg);
+    background-size: cover;
+    filter: brightness(75%);
+    border-radius:2em;
+    box-shadow: 1px 1px 1px black;
+}
+
+/*========================================================================================*/
+/*=========================COLECCIÓN PERMANENTE en index.html=============================*/
+/*========================================================================================*/
+
+/*Estilo para editar el contenedor de información*/
+#coleccion{
+    background-color:#e9edc9;
+    border-radius:2em;
+    padding-top: 20px;
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid black;
+}
+
+/*Estilo para editar la lista enumerada sobre la colección permanente*/
+#coleccion ol{
+    padding-left: 20px;
+}
+
+/*Estilos para el enlace a más información de la colección*/
+#coleccion a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/*========================================================================================*/
+/*=========================================VIDEO==========================================*/
+/*========================================================================================*/
+
+/*Estilos para editar el video de introducción*/
+.contenedor-video{
+    display: flex;
+    justify-content: center;
+}
+
+.video{
+    width: 800px;
+    height: 600px;
+    
+}
+
+/*========================================================================================*/
+/*=================================INFORMACION EXTRA======================================*/
+/*========================================================================================*/
+
+/*Estilos para información extra*/
+.informacion-extra{
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+/*========================================================================================*/
+/*===============================INFORMACION en index.html================================*/
+/*========================================================================================*/
+
+/*Estilos para editar 3 parrafos de información*/
+/*Cada uno tiene un nombre distinto para poder identificarlo y editarlo a gusto propio*/
+.info{
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+}
+
+/*Estilos para editar los contenedores que se encuentran dentro de "info"*/
+.info div{
+    width: 500px;
+    margin: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4em;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px black;
+}
+
+/*Estilos para los títulos de los contenedores dentro de "info"*/
+.info h2{
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+/*Estilo para editar el div llamado "informacion*/
+.Informacion{
+    background-color: #e9edc9;
+    text-align: center;
+    padding: 5em 0;
+}
+
+/*Estilos para colocar espacios entre el mapa de la localización y los bordes del div*/
+/*Iframe procedente de Google Maps*/
+.Informacion iframe{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Estilo para editar el div llamado "Horario*/
+.Horario{
+    background-color: #e9edc9;
+    padding: 5em 0;
+}
+
+/*Estilos para editar las diferentes partes del div*/
+.Horario li{
+    list-style: none;
+}
+
+/*Estilos para editar la visita individual dentro del div "Horario"*/
+.visita-individual{
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+/*Estilos para editar la visita en grupos dentro del div "Horario"*/
+.visita-grupos{
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+/*Estilos para editar los parrafos dentro del div "Horario"*/
+.Horario p{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Estilos para editar la imagen sobre el Centro de Interpretación de la Seda*/
+.imagen-seda {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    border-radius: 1em;
+}
+
+/*Estilos para editar el div llamado "Normas"*/
+.Normas{
+    background-color: #e9edc9;
+    padding: 5em 0;
+}
+
+/*Estilos para las normas de acceso*/
+.normas-acceso{
+    padding: 30px; 
+    padding-left: 40px;
+}
+
+/*Estilo para las fotos de prohibido tocar y proohibido cámaras*/
+.normas-foto{
+    display:flex;
+    justify-content: center;
+}
+
+/*Estilos para editar el div "info" al cambiar resolución*/
+@media (max-width:1217px){
+    .info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .info div{
+        margin-top: 5%;
+    };
+}
+
+/*========================================================================================*/
+/*================================RESERVA en index.html===================================*/
+/*========================================================================================*/
+
+
+/*Estilo para editar el contenedor del botón de reserva*/
+.contenedor-reserva{
+    display: flex;
+    justify-content: center;
+}
+
+/*Estilos para editar el botón de reserva desde el index de la página web*/
+.reserva{
+    background-image: url(fotos/header.jpg);
+    background-size: cover;
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400px;
+    font-size:30px;
+    font-family:"Garamond";
+    letter-spacing:1px;
+    border-radius:2em;
+    font-weight: bold;
+    position: relative;
+    float:left;
+    margin:1px;
+    padding:0;
+    list-style: none;     
+}
+
+/*Estilos para editar el enlace del botón "reserva" con dirección a las reservas*/
+.reserva a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:30px;
+    padding:10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family:"Garamond";
+    letter-spacing:1px;
+    border-radius:2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*Estilos para que el botón de reserva cambie al colocar el ratón sobre este*/
+.reserva:hover {
+    background-image: url(fotos/header.jpg);
+    background-size: cover;
+    filter: brightness(75%);
+    border-radius:2em;   
+}
+
+/*Estilos para editar el enlace del botón de reserva*/
+.reserva a:hover{
+    font-size: 32px;
+    box-shadow: 2px 2px 2px black;
+}
+
+/*========================================================================================*/
+/*=================================LA CUEVA DE LAS SETAS==================================*/
+/*========================================================================================*/
+
+/*Estilos para editar la subpágina "Cueva de la setas"*/
+/*Esta subpágina contiene información sobre la Cueva de las Setas*/
+.Cueva-setas{
+    align-items: center;
+    background-color:#e9edc9;
+    border-radius:2em;
+    padding-top: 20px;
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: solid black 1px;
+    font-family: "Garamond";
+}
+
+/*Estilos para editar los enlaces dentro de la subpágina*/
+.Cueva-setas a {
+    text-decoration: none;
+    color: #3972a4;
+}
+
+/*Estilo para cambiar de color el enlace una vez ya haya visitado la dirección de este enlace*/
+.Cueva-setas a:visited{
+    color: rgb(137, 57, 137);
+}
+
+/*Estilos para editar el titulo de la subpágina*/
+.Cueva-setas h1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+/*Estilos para editar el contenedor con las imagenes de la subpágina "Cueva de las setas"*/
+.Cueva-fotos{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+/*Estilos para editar las imagenes de la subpágina Cueva de las Setas*/
+.Cueva-fotos img{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);
+    border-radius:1em;
+}
+
+/*========================================================================================*/
+/*==================================COLECCIÓN PERMANENTE==================================*/
+/*========================================================================================*/
+
+/*Estilos para editar la subpágina "¿Qué podemos ver?"*/
+.coleccion-ver{
+    align-items: center;
+    background-color:#e9edc9;
+    border-radius:2em;
+    padding-top: 20px;
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: solid black 1px;
+    font-family: "Garamond";
+}
+
+/*Estilo para editar el título de la subpágina Colección Permanente*/
+.coleccion-ver h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/*Estilos para editar los parrafos de la subpágina Colección Permanente*/
+.coleccion-ver p{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+/*Estilos para editar la lista numérica de la subpágina Colección Permanente*/
+.coleccion-ver ol{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*Estilos para editar la imagen 1*/
+.coleccion-img1{
+    display: flex;
+    justify-content: space-around;
+    margin:35px;
+}
+
+/*Estilos para editar la imagen 2*/
+.coleccion-img2{
+    display: flex;
+    justify-content: space-around;
+    margin:35px;
+}
+
+/*Estilos para editar las imagenes 1 y 2 cuando cambie la resolución de la pantalla*/
+@media (max-width:1315){
+    .coleccion-img1 img{
+        width: auto;
+        margin: auto;
+        padding: auto;
+    }
+}
+
+/*Estilos que se aplican a todas las imagenes de la subpágina Colección Permanente*/
+.coleccion-ver img{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);
+    border-radius:1em;
+}
+
+/*========================================================================================*/
+/*========================================GALERIA=========================================*/
+/*========================================================================================*/
+
+/*Estilos para el carrusel de imagenes*/
+.slide {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin:auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 1024px;
+    height: 577px;
+    border-radius: 1em;    position: relative;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.slide-item img {
+    display: block;
+    height: 100%;
+    max-width: 100%;
+}
+
+/*Estilos para editar las flechas para pasar de foto*/
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.slide-control.prev {
+    left: 2%;
+}
+
+.slide-control.next {
+    right: 2%;
+}
+
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3,
+#slide-4:checked ~ .control-4,
+#slide-5:checked ~ .control-5,
+#slide-6:checked ~ .control-6,
+#slide-7:checked ~ .control-7,
+#slide-8:checked ~ .control-8 {
+    display: block;
+}
+
+/*Estilo para poder cambiar de foto mediante clicks en los circulos*/
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/*Estilos para editar los circulos para pasar de fotos*/
+.slide-circulo {
+    color: #746464;
+    cursor: pointer;
+    display: block;
+    font-size: 50px;
+}
+
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+
+/*Estilos para editar los circulos cuando nos encontremos en cada foto*/
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+    li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+    li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+    li:nth-child(3) .slide-circulo,
+#slide-4:checked ~ .control-4 ~ .slide-indicador 
+    li:nth-child(4) .slide-circulo,
+#slide-5:checked ~ .control-5 ~ .slide-indicador 
+    li:nth-child(5) .slide-circulo,
+#slide-6:checked ~ .control-6 ~ .slide-indicador 
+    li:nth-child(6) .slide-circulo,
+#slide-7:checked ~ .control-7 ~ .slide-indicador 
+    li:nth-child(7) .slide-circulo,
+#slide-8:checked ~ .control-8 ~ .slide-indicador 
+    li:nth-child(8) .slide-circulo {
+    color: #428bca;
+}
+.galeria-movil{
+    display: none;
+}
+
+/*========================================================================================*/
+/*====================================FORMULARIO/RESERVA==================================*/
+/*========================================================================================*/
+
+    .reserva2 fieldset {
+    border: none;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    }
+    .reserva2 label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    }
+    .reserva2 input {
+    display: block;
+    width: 99%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    }
+    .reserva2 input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    }
+    .reserva2 input[type="submit"]:hover {
+    background-color: #3e8e41;
+    }
+    .reserva2 h2{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .volver-atras{
+        text-decoration:none;
+        color:#4CAF50; 
+        background-color:#f7f7f7; 
+        padding:10px 20px; 
+        border-radius:5px; 
+        border:2px solid #ddd; 
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.3); 
+        font-size:16px;
+        float:left;
+        margin: 50px;
+        margin-left: 10px;
+    }
+/*========================================================================================*/
+/*=======================================TABOUROT=========================================*/
+/*========================================================================================*/
+
+/*Estilos para editar la información de la biografía de Tabourot*/
+.tabourot-info{
+    align-items: right;
+    background-color:#e9edc9;
+    border-radius:2em;
+    padding-top: 20px;
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: solid black 1px;
+    font-family: "Garamond";
+}
+
+/*Estilos para editar los títulos de la biografía de Tabourot*/
+.tabourot-info h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+/*Estilos para editar la imagen de Tabourot*/
+.tabourot-foto{
+    display: flex;
+    justify-content: left;
+    float: left;
+    margin: 40px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);
+    border-radius:2em;
+}
+
+/*========================================================================================*/
+/*=========================================FOOTER=========================================*/
+/*========================================================================================*/
+
+/*Estilos para editar el footer*/
+footer{
+    background-color: #515250;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
+    align-items: center;
+}
+
+/*Estilos para colocar el footer al final de la página de reservas*/
+/*La página reservas tiene el footer desajustado, debido a que no tiene la suficiente información como para llegar al final de la página.*/
+/*De esta manera, debemos editarlo a parte de los estilos generales del footer*/
+.footer-2{
+    position: relative;
+    margin-top: 50px;
+    bottom: 0;
+}
+
+.footer-3{
+    position: static;
+    bottom: 0;
+}
+
+/*Estilos para colocar en la posición correcta la licencia de Creative Commons*/
+.licencia{
+    text-align: center;
+}
+
+/*Estilos para editar el texto de la licencia Creative Commons*/
+.licencia p{
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+/*Permite emplear un fuente externa a las predeterminadas*/
+/*Para ello debemos instalar la fuente y colocar un enlace al directorio en el que se encuentre para poder visualizar la página web con dicha fuente*/
+@font-face {
+    font-family: Garamond;
+    src: url(fuentes/EBGaramond-VariableFont_wght.ttf);
+}
+/*Estilos para editar el header al reducir la resolución de la pantalla*/
+/*De esta manera, el formato del header variará dependiendo de la resolución de la pantalla*/
+@media (max-width:1300px){
+    #menu ul li a{
+        font-size: 12px;
+    }
+    .lista-principal svg{
+        width:10px;
+        height: 10px;
+        padding: 0;
+        margin: 0;
+        border-radius: 20px;
+        transition: .5s ease;
+    }
+}
+@media (max-width:1140px){
+    header img{
+        display: none;
+    }
+    header{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width:1024px){
+    header{
+        position: relative;
+        justify-content: center;
+    }
+    .checkbtn{
+        display:block;
+    }
+    header h1{
+        font-size: 4vw;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    header a img {
+        display: none;
+    }
+    
+    #menu ul li:hover{
+        background: none;
+    }
+
+    #menu ul ul li:hover{
+        background-color: orange;
+        border-radius: 0 2em 2em 0;
+    }
+
+    #menu ul{
+        position:absolute;
+        width: 40%;
+        height: auto;
+        top: 85%;
+        left:-100%;
+        background: orange;
+        padding-top:10px;
+        text-align:center;
+        transition: .5s;
+        margin-top: 20px;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        border-bottom-right-radius: 2em;
+    }
+    #menu ul li {
+        background: none;
+        display: block;
+        margin: 10px 0;
+        line-height: 30px;
+        float:none;
+        position: relative;
+    }
+    #menu ul li a{
+        font-size:15px;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    #menu ul li:hover > ul {
+        display:block;
+    }
+
+    #menu ul ul {
+        display:none;
+        top:-100%;
+        left:100%;
+        background: none;
+        border: none;
+        width: auto;
+    }
+    
+    /*Estilos para el la lista del submenu*/
+    #menu ul ul li {
+        border-radius: 0 2em 2em 0;
+        display:block;
+        position: relative;
+        left: 0;
+        background: orange;
+        white-space: nowrap;
+        margin-left: 0px;
+        border: 1px solid black;
+        border-left: 0;
+    }
+    
+    /*Estilos para los enlaces del submenu*/
+    #menu ul ul a {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .rightarrow{
+        width: 12px;
+        height: 12px;
+        transform: rotate(0deg);
+    }
+    #CuevaSetas{
+        flex-wrap: wrap;
+    }
+    #CuevaSetas h2{
+        text-align: center;
+    }
+    #parte1{
+        margin-bottom: 30px;
+    }
+    #parte2{
+        display: grid;
+        margin: auto;
+    }
+    .biografia{
+        margin-top: 10px;
+    }
+    #coleccion h2{
+        text-align: center;
+    }
+    .video{
+        width: 80%;
+        height: 80%;
+        margin-top: 40px;
+    }
+    .Informacion iframe{
+        width: 300px;
+        height: auto;
+    }
+    .reserva a{
+        font-size: 20px;
+    }
+    .reserva a:hover{
+        font-size: 20px;
+    }
+    .Cueva-fotos{
+        display: block;
+        text-align: center;
+        column-count: 1;
+        column-gap: 20px;
+    }
+    .Cueva-fotos img{
+        margin-top: 40px;
+    }
+    .coleccion-img1{
+        display: grid;
+        column-count: 1;
+        column-gap: 20px;
+        text-align: center;
+    }
+    .coleccion-img2{
+        display: grid;
+        column-count: 1;
+        column-gap: 20px;
+        text-align: center;
+    }
+    .coleccion-img1 img{
+        margin-top: 30px;
+        width: 300px;
+        height: auto;
+    }
+    .coleccion-img2 img{
+        margin-top: 30px;
+        width: 300px;
+        height: auto;
+    }
+    .slide{
+        display: none;
+    }
+    .galeria-movil{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .galeria-movil img{
+        width: 300px;
+        height: auto;
+        padding: 10px;
+        border-radius: 1em;
+    }
+    .reserva2 input {
+        width: 90%;
+        margin:auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .reseva2 input, label, input[type="submit"] {
+        font-size: 14px;
+    }
+    .reserva2 input[type="submit"] {
+        padding: 8px 12px;
+    }
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer img{
+        width: 100px;
+        height: auto;
+    }
+    footer div {
+        display: flex;
+        text-align: center;
+    }
+    footer div img{
+        width: 50px;
+        height: auto;
+    }
+    .licencia{
+        display:grid;
+        width: 100px;
+        font-size: 10px;
+        margin-left: 0;
+    }
+    .licencia p{
+        padding-bottom: 5px;
+    }
+    .licencia img{
+        width: 80px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .galeria-movil img {
+        max-width: 45%;
+        margin-bottom: 30px;
+    }
+}
